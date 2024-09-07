@@ -1,17 +1,23 @@
-<local:MyCard Title="欢迎" Margin="0,0,0,0" CanSwap="false" IsSwaped="false">
-	<StackPanel Margin="0,0,0,0">
-        <TextBlock TextWrapping="Wrap" Margin="215,10,215,10" Foreground="{DynamicResource ColorBrush2}" FontSize="30" HorizontalAlignment="Center"
-                    Text="欢迎使用CSJ制作的自制主页！" />
-        <TextBlock TextWrapping="Wrap" Margin="250,0,250,10" Foreground="{DynamicResource ColorBrush2}" FontSize="11" HorizontalAlignment="Center"
+<local:MyCard Title="欢迎" Margin="0,-6,0,0" CanSwap="false" IsSwaped="false">
+	<StackPanel Margin="24,35,24,15">
+        <TextBlock Foreground="{DynamicResource ColorBrush2}" FontSize="20" HorizontalAlignment="Center"
+                    Text="欢迎使用CSJ Minipage！" />
+        <TextBlock Foreground="{DynamicResource ColorBrush2}" FontSize="11" HorizontalAlignment="Center"
                     Text="by：CSJ" />
         <Calendar HorizontalAlignment="Center" Margin="0,0,0,0" />
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="{DynamicResource ColorBrush2}" HorizontalAlignment="Center"
        	 Text="“{cave}”" />
 	</StackPanel>
 </local:MyCard>
-<local:MyCard Title="启动器小工具" Margin="0,10,0,0" CanSwap="true" IsSwaped="false">
+<local:MyCard Title="启动器小工具" Margin="0,6,0,-20" CanSwap="true" IsSwaped="false">
 	<StackPanel Margin="0,0,0,0">
-         <local:MyButton Margin="0,45,0,10" Padding="400,0,400,0" Height="35" HorizontalAlignment="Center"
+        <Grid>
+    <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.95*" />
+                    <ColumnDefinition Width="0*" />
+               </Grid.ColumnDefinitions>
+         <local:MyButton Grid.Column="0" Margin="10,50,10,20" Height="35"
                     Text="刷新主页" ToolTip="此操作会刷新主页，同时上方的回声洞也会刷新！" EventType="刷新主页" EventData="点击重新加载主页。如果主页文件为联网更新，这会重新下载主页内容"/>
+         </Grid>
 	</StackPanel>
 </local:MyCard>
