@@ -5,7 +5,7 @@
         <TextBlock Foreground="{DynamicResource ColorBrush2}" FontSize="11" HorizontalAlignment="Center"
                     Text="by：CSJ" />
         <Calendar HorizontalAlignment="Center" Margin="0,0,0,0" />
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="{DynamicResource ColorBrush2}" HorizontalAlignment="Center"
+        <TextBlock Foreground="{DynamicResource ColorBrush2}" HorizontalAlignment="Center"
        	 Text="“{cave}”" />
 	</StackPanel>
 </local:MyCard>
