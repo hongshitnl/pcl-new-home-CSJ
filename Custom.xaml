@@ -16,8 +16,17 @@
                     <ColumnDefinition Width="1.95*" />
                     <ColumnDefinition Width="0*" />
                </Grid.ColumnDefinitions>
-         <local:MyButton Grid.Column="0" Margin="10,50,10,20" Height="35"
+                    <local:MyButton Grid.Column="0" Margin="10,40,10,5" Height="35"
                     Text="刷新主页" ToolTip="此操作会刷新主页，同时上方的回声洞也会刷新！" EventType="刷新主页" EventData="点击重新加载主页。如果主页文件为联网更新，这会重新下载主页内容"/>
          </Grid>
+	    <local:MyListItem Margin="2,0,0,0"
+               Logo="pack://application:,,,/images/blocks/GoldBlock.png" Title="今日人品"
+               Info="试试手气！" EventType="今日人品" Type="Clickable" />
+	    <local:MyListItem Margin="2,0,0,0"
+               Logo="pack://application:,,,/images/blocks/CommandBlock.png" Title="内存优化"
+               Info="可以大幅度优化内存占用，但好像对机械硬盘不太友好！" EventType="内存优化" Type="Clickable" />
+	     <local:MyListItem Margin="2,0,0,20" Title="清理垃圾"
+               Logo="pack://application:,,,/images/blocks/Cobblestone.png"
+               Info="让pcl自己清理自己" EventType="清理垃圾" Type="Clickable" />
 	</StackPanel>
 </local:MyCard>
