@@ -1,29 +1,45 @@
 <local:MyCard Title="欢迎" Margin="0,-6,0,0" CanSwap="false" IsSwaped="false">
 	<StackPanel Margin="24,35,24,15">
         <TextBlock Foreground="{DynamicResource ColorBrush2}" FontSize="20" HorizontalAlignment="Center"
-                    Text="欢迎使用CSJ Minipage！" />
+                Text="欢迎使用CSJ Minipage！" />
         <TextBlock Foreground="{DynamicResource ColorBrush2}" FontSize="11" HorizontalAlignment="Center"
-                    Text="by：CSJ" />
+                Text="by：CSJ" />
         <Calendar HorizontalAlignment="Center" Margin="0,0,0,0" />
         <TextBlock Foreground="{DynamicResource ColorBrush2}" HorizontalAlignment="Center"
        	 Text="“{cave}”" />
 	</StackPanel>
         <local:MyIconButton Margin="0,0,0,0" Height="30" HorizontalAlignment="right" VerticalAlignment="bottom"
-	    ToolTip="刷新主页"
-                    EventType="刷新主页"
-                    LogoScale="0.8"
-                    Logo="M256.455,8C322.724,8.119,382.892,34.233,427.314,76.685L463.029,40.97C478.149,25.851,504,36.559,504,57.941L504,192C504,205.255,493.255,216,480,216L345.941,216C324.559,216,313.851,190.149,328.97,175.029L370.72,133.279C339.856,104.38 299.919,88.372 257.49,88.006 165.092,87.208 87.207,161.983 88.0059999999999,257.448 88.764,348.009 162.184,424 256,424 297.127,424 335.997,409.322 366.629,382.444 371.372,378.283 378.535,378.536 382.997,382.997L422.659,422.659C427.531,427.531 427.29,435.474 422.177,440.092 378.202,479.813 319.926,504 256,504 119.034,504 8.001,392.967 8,256.002 7.999,119.193 119.646,7.755 256.455,8z" />
+	        ToolTip="刷新主页"
+                EventType="刷新主页"
+                LogoScale="0.8"
+                Logo="M256.455,8C322.724,8.119,382.892,34.233,427.314,76.685L463.029,40.97C478.149,25.851,504,36.559,504,57.941L504,192C504,205.255,493.255,216,480,216L345.941,216C324.559,216,313.851,190.149,328.97,175.029L370.72,133.279C339.856,104.38 299.919,88.372 257.49,88.006 165.092,87.208 87.207,161.983 88.0059999999999,257.448 88.764,348.009 162.184,424 256,424 297.127,424 335.997,409.322 366.629,382.444 371.372,378.283 378.535,378.536 382.997,382.997L422.659,422.659C427.531,427.531 427.29,435.474 422.177,440.092 378.202,479.813 319.926,504 256,504 119.034,504 8.001,392.967 8,256.002 7.999,119.193 119.646,7.755 256.455,8z" />
 </local:MyCard>
-<local:MyCard Title="启动器小工具" Margin="0,6,0,-20" CanSwap="true" IsSwaped="false">
+<local:MyCard Margin="0,6,0,-20" CanSwap="false" IsSwaped="false">
 	<StackPanel Margin="0,0,0,0">
-	    <local:MyListItem Margin="2,35,0,0"
-               Logo="pack://application:,,,/images/blocks/GoldBlock.png" Title="今日人品"
-               Info="试试手气！" EventType="今日人品" Type="Clickable" />
-	    <local:MyListItem Margin="2,0,0,0"
-               Logo="pack://application:,,,/images/blocks/CommandBlock.png" Title="内存优化"
-               Info="可以大幅度优化内存占用，但好像对机械硬盘不太友好！" EventType="内存优化" Type="Clickable" />
-	     <local:MyListItem Margin="2,0,0,20" Title="清理垃圾"
-               Logo="pack://application:,,,/images/blocks/Cobblestone.png"
-               Info="让pcl自己清理自己" EventType="清理垃圾" Type="Clickable" />
+	        <local:MyListItem Margin="2,15,0,0"
+                        Logo="pack://application:,,,/images/blocks/GoldBlock.png" Title="今日人品"
+                        Info="试试手气！" EventType="今日人品" Type="Clickable" />
+	        <local:MyListItem Margin="2,0,0,0"
+                        Logo="pack://application:,,,/images/blocks/CommandBlock.png" Title="内存优化"
+                        Info="可以大幅度优化内存占用，但好像对机械硬盘不太友好！" EventType="内存优化" Type="Clickable" />
+	        <local:MyListItem Margin="2,0,0,15" Title="清理垃圾"
+                        Logo="pack://application:,,,/images/blocks/Cobblestone.png"
+                        Info="让pcl自己清理自己" EventType="清理垃圾" Type="Clickable" />
 	</StackPanel>
 </local:MyCard>
+
+<!--
+<Grid Margin="0,30,0,8">
+     <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1*" />
+          <ColumnDefinition Width="80" />
+          <ColumnDefinition Width="1*" />
+     </Grid.ColumnDefinitions>
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="0" />
+     <TextBlock Text="改成你要的标题！" FontSize="15" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1"
+          VerticalAlignment="Center" HorizontalAlignment="Center" />
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="2" />
+</Grid>
+小横线qwq-->
