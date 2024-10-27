@@ -27,7 +27,42 @@
                         Info="让pcl自己清理自己" EventType="清理垃圾" Type="Clickable" />
 	</StackPanel>
 </local:MyCard>
-
+<Grid Margin="0,30,0,8">
+     <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1*" />
+          <ColumnDefinition Width="80" />
+          <ColumnDefinition Width="1*" />
+     </Grid.ColumnDefinitions>
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="0" />
+     <TextBlock Text="下载器" FontSize="15" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1"
+          VerticalAlignment="Center" HorizontalAlignment="Center" />
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="2" />
+</Grid>
+<local:MyCard Margin="0,0,0,8" Title="下载器" CanSwap="True" IsSwaped="True">
+     <StackPanel Margin="24,40,24,15">
+          <local:MyHint Margin="0,0,0,10" IsWarn="False"
+               Text="使用 PCL 的高端多线程下载引擎下载任意文件（可我觉得IDM更好）。请注意，部分网站 (例如百le度se网盘) 可能会报错 (403) 已禁止，无法正常下载。" />
+          <local:MyHint Margin="0,0,0,10" IsWarn="True"
+               Text="链接必须为以 http:// 或 https:// 开头的网址" />
+          <Grid>
+          <Grid.ColumnDefinitions>
+               <ColumnDefinition Width="3*" />
+               <ColumnDefinition Width="1*" />
+               <ColumnDefinition Width="1*" />
+          </Grid.ColumnDefinitions>
+          <local:MyTextBox HintText="下载链接：" Margin="0,0,0,0" Name="web" Height="30"
+               Grid.Column="0" ToolTip="在此输入下载链接，点击右边按钮下载自定义文件。&#xA;注意不要按下Enter键，这会直接启动游戏。" />
+          <local:MyButton EventType="打开网页" EventData="https://www.bilibili.com/video/BV1GJ411x7h7/"
+               Text="什么东西？" Margin="10,0,5,0" Height="30" Grid.Column="1" ToolTip="千万不要点🙅‍" Padding="1,0,1,0"
+               ColorType="Highlight" />
+          <local:MyButton EventType="下载文件" EventData="{Binding ElementName=web,Path=Text}"
+               Text="开始下载→" Margin="5,0,5,0" Height="30" Grid.Column="2" Padding="1,0,1,0"
+               ColorType="Highlight" />
+          </Grid>
+     </StackPanel>
+</local:MyCard>
 <!--
 <Grid Margin="0,30,0,8">
      <Grid.ColumnDefinitions>
